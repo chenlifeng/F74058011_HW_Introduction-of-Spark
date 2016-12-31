@@ -6,9 +6,15 @@ This repository contains the full listing of MySQL used to create the book, incl
 
 ## [Table of Contents](http://nbviewer.jupyter.org/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/Index.ipynb)
    [MySQL介绍](https://github.com/chenlifeng/F74058011_HW_MySQLHandbook/blob/master/notebook/Introduction%20of%20MySQL.ipynb)
-   ——MySQL特性
-   ——MySQL各个存储引擎
-   ——MySQL文件
+  
+  
+  
+  
+       1.MySQL特性
+
+       2.MySQL各个存储引擎
+
+       3.MySQL文件
    
    
    
