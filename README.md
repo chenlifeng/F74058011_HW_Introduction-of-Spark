@@ -27,6 +27,16 @@ This repository contains the full listing of MySQL used to create the book, incl
        2.4 Innodb中的锁
 
        2.5 Innodb中的事务
+       
+ [3. SQL——Structured Query Language](https://github.com/chenlifeng/F74058011_HW_MySQLHandbook/blob/master/notebook/SQL%20language.ipynb)
+  
+       3.1 Basic query in MySQL
+
+       3.2 MySQL class
+
+       3.3 MySQL Functions
+
+       
    
    
    
