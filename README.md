@@ -35,6 +35,30 @@ This repository contains the full listing of MySQL used to create the book, incl
        3.2 MySQL class
 
        3.3 MySQL Functions
+       
+ [4. Demo code](https://github.com/chenlifeng/F74058011_HW_MySQLHandbook/blob/master/notebook/sample%20code.ipynb)
+  
+       4.1 Creating and Deleting a Database - CREATE DATABASE and DROP DATABASE
+
+       4.2 Creating and Deleting a Table - CREATE TABLE and DROP TABLE¶
+
+       4.3 Inserting Rows - INSERT INTO
+       
+       4.4 Querying the Database - SELECT
+       
+       4.5 Producing Summary Reports
+       
+       4.6 Modifying Data - UPDATE
+       
+       4.7 More Than One Tables
+       
+             4.7.1 One-To-Many Relationship
+             
+             4.7.2 Many-To-Many Relationship
+             
+             4.7.3 One-to-one Relationship
+       
+       4.8 View
 
        
    
