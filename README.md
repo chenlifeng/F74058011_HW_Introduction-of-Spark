@@ -62,8 +62,10 @@ This repository contains the full listing of MySQL used to create the book, incl
        
     [5. MySQL使用心得](https://github.com/chenlifeng/F74058011_HW_MySQLHandbook/blob/master/notebook/experience.ipynb)
   
-        5.1 使用方面
-        5.2 安全方面 
+  
+        5.1 使用方面
+
+        5.2 安全方面 
    
    
    
