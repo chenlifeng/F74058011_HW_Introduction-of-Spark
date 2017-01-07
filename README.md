@@ -156,7 +156,7 @@ Spark的编译运行模式：
   (以上为我遇到的比较大众化的问题，一些基础的语法问题可以根据在terminal的提示在对应的Line修改)
          
          
-##例子：关于台北市窃盗Pattern的查找
+##例子：[关于台北市窃盗Pattern的查找](https://github.com/chenlifeng/F74058011_HW_Introduction-of-Spark/tree/master/Spark)
  
  
  
