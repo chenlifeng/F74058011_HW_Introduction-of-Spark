@@ -147,9 +147,9 @@ Spark的编译运行模式：
   
  ③java.net.ConnectException: Call From chenlf-virtual-machine/192.168.132.128 to chenlf-virtual-machine:9000 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
  
-   原因：这个是上面提到的遇到的Hadoop的问题，可能是代码中引入的某些插件需要用到hadoop
-   
-   解决方法：可以启动hadoop，再将数据上传到hdfs
+原因：这个是上面提到的遇到的Hadoop的问题，可能是代码中引入的某些插件需要用到hadoop
+
+解决方法：可以启动hadoop，再将数据上传到hdfs
   
   
   
