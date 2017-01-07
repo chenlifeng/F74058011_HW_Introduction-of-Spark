@@ -39,7 +39,7 @@ Dataset:[Taipei Burglary2015-01_10.csv](https://drive.google.com/open?id=0ByW2ff
      
  執行模式:
  
-     –./bin/spark-submit hw_spark.py2 3600
+     –./bin/spark-submit hw_spark.py 2 3600
      –第一個參數讓使用者設定兩兩事件相距的距離
      –第二個參數讓使用者設定竊盜序列的時間長度
      
