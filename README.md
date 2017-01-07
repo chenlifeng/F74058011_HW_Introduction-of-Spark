@@ -126,8 +126,27 @@ Spark的编译运行模式：
               export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib"
          
          
+##使用Spark可能会遇到的问题：
+ ①IndentationError: unindent does not match any outer indentation level
+ 
+   原因：这个问题的原因是因为没有对齐或者tab键和空格键混用导致的，最终发现我的notepad中代码中混有两个tab箭头
+   
+   解决方法：原因和解决方法都是由这个Link启发：http://www.crifan.com/python_syntax_error_indentationerror/comment-page-1/
+   
+   可以根据link里面设置避免以后出错
+                          
+ ②No module named dateutil.parser
+ 
+   解决方法：
+   
+   sudo apt-get install python-pip 
+   
+   sudo pip install python-dateutil
+   
+  (以上为我遇到的比较大众化的问题，一些基础的语法问题可以根据在terminal的提示在对应的Line修改)
+     
          
-##关于台北市窃盗Pattern的查找
+##例子：关于台北市窃盗Pattern的查找
  
  
  
