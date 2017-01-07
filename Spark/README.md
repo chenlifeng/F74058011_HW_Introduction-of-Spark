@@ -37,7 +37,7 @@
     ①IndentationError: unindent does not match any outer indentation level
       原因：这个问题的原因是因为没有对齐或者tab键和空格键混用导致的，最终发现我的notepad中代码中混有两个tab箭头
       解决方法：原因和解决方法都是由这个Link启发：http://www.crifan.com/python_syntax_error_indentationerror/comment-page-1/
-                          可以根据link里面设置避免以后出错
+                             可以根据link里面设置避免以后出错
     ②No module named dateutil.parser
       解决方法：
       sudo apt-get install python-pip 
