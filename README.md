@@ -29,7 +29,7 @@ Spark的编译运行模式：
 
 ①切换到spark-1.6.3文件夹下
 
-②执行bin/spark-submit hw_spark.py
+②执行bin/spark-submit xxx.py
 
 ##Hadoop的安装配置
 （因为我在使用使用Spark的过程中有套件提示需要用到Hadoop，所以说一下Hadoop的安装后的配置问题，下面是我的ubuntu系统的配置，这边的配置有求助助教帮忙配置，感谢！）
