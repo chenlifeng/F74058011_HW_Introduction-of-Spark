@@ -3,19 +3,19 @@
 
       ①	首先将每条数据按照时间递增排序，使用asc()方法排序
       ②	根据窃盗序列的要求【竊盜事件兩兩距離不大於R公里，整個竊盜序列從第一個竊盜事件到最後一個竊盜事件所經歷的時間不大於T秒】
-           求出最长的那个序列：先loop每一条element，然后第二个loop从该条element后开始查找时间条件符合的element，然后检查该条element是否与
-           序列中原本已经有的element两两距离都不大于R公里，如果符合条件就将这个element的相关信息加入序列
+              求出最长的那个序列：先loop每一条element，然后第二个loop从该条element后开始查找时间条件符合的element，然后检查该条element是否与
+              序列中原本已经有的element两两距离都不大于R公里，如果符合条件就将这个element的相关信息加入序列
       ③	根据求出的最长序列找出比较短的所有序列
       ④	将找到的所有序列根据序列类型进行排序，并计算出他們各自的个数
 
 ##Requirement：
 
      ①	需要将TaipeiBurglary2015-01_10.csv放进Spark文件下的data中
-         （这是我的代码里面设置的路径，如果要放在不同的文件夹，需要去代码里面修改一下路径）
+             （这是我的代码里面设置的路径，如果要放在不同的文件夹，需要去代码里面修改一下路径）
      ②	输入要求：HW_F74058011_Spark.py 2 3600，会输出在output.txt里面
      ③	需要把附带的pyspark_csv.py放在指定路径中（同时要修改代码中的路径）:
-               比如我的代码里面对应的路径就是把pyspark_csv.py和HW_F74058011_Spark.py一起放在spark-1.6.3文件夹下面
-              注意：这个pyspark_csv需要自己去网上下载(下载地址：https://github.com/seahboonsiew/pyspark-csv)
+              比如我的代码里面对应的路径就是把pyspark_csv.py和HW_F74058011_Spark.py一起放在spark-1.6.3文件夹下面
+              注意：pyspark_csv这个repo的othercode文件夹下面可以下载或者需要自己去网上下载
 
 ##执行方式：
 
@@ -42,10 +42,10 @@
       解决方法：
       sudo apt-get install python-pip 
       sudo pip install python-dateutil
-    (以上为我遇到的比较大众化的问题，一些基础的语法问题可以根据在terminal的提示在对应的Line修改)
+     (以上为我遇到的比较大众化的问题，一些基础的语法问题可以根据在terminal的提示在对应的Line修改)
 
 ##代码不足之处：
-     因为这个Homework比较要求大部分根据Spark的function进行操作，尽量不要用python语法，比如for loop，但是由于我是第一次使用saprk和python，
+     因为这个Homework比较要求大部分根据Spark的function进行操作，尽量不要用python语法，比如for loop，但是由于我是第一次使用saprk和python,
      比较不熟悉， 最后尝试了foreach这个方法没有成功，所以最后代码中用了比较多的for loop进行关于距离条件要求的检查。
 
 ##个人感想：
