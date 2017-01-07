@@ -45,6 +45,7 @@
      (以上为我遇到的比较大众化的问题，一些基础的语法问题可以根据在terminal的提示在对应的Line修改)
 
 ##代码不足之处：
+
      因为这个Homework比较要求大部分根据Spark的function进行操作，尽量不要用python语法，比如for loop，但是由于我是第一次使用spark和python,
      比较不熟悉， 最后尝试了foreach这个方法没有成功，所以最后代码中用了比较多的for loop进行关于距离条件要求的检查。
 
