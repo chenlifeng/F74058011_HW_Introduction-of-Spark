@@ -158,6 +158,14 @@ sc.textFile("TaipeiBurglary2015-01_10.csv"))，所以需要连接到Spark并且�
 
 ![RDD](https://github.com/chenlifeng/F74058011_HW_Introduction-of-Spark/blob/master/feature/RDD.png)
 
+
+
+创建RDD：
+
+1.Parallelize a collection
+
+2.Read data from an external source (Local Disk, S3, HDFS, etc)
+
 –Transformations
 
 Create a new dataset from an existing one
