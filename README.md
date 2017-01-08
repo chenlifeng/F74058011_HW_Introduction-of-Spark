@@ -150,7 +150,7 @@ GraphX:这个模块主要支持一些关于图形的处理操作。
 我们可以从上面的架构上看到我们编写的Application是通过Spark core这个模块的功能进行提交和执行的,所以主要模型主要就是编写和提交执行两个部分。
 
 1.我们编写的程序是借助Spark core里面的SparkContext提供的API进行，因为SparkContext里面有提供一些通信、存储的功能。一些比较常见的API比如有textfile(使用方式：data =
-sc.textFile("TaipeiBurglary2015-01_10.csv"))
+sc.textFile("TaipeiBurglary2015-01_10.csv"))，所以需要连接到Spark并且连接到这个Spark core里面的SparkContext，并且初始化SparkContext，然后开始我们RDD的创建和一些operation的执行。
 
 2.program在Spark内部的具体执行处理流程[查看流程](http://m.blog.csdn.net/article/details?id=52422703)
 
