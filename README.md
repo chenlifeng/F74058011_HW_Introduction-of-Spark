@@ -34,7 +34,8 @@ Spark环境变量设置（修改.bashrc文件）:
    
    export PATH=$PATH:$SPARK_HOME/bin
  
- ##Hadoop的安装配置
+##Hadoop的安装配置
+ 
 （因为我在使用使用Spark的过程中有套件提示需要用到Hadoop，所以说一下Hadoop的安装后的配置问题，下面是我的ubuntu系统的配置，这边的配置有求助助教帮忙配置，感谢！）
 
 1.core-site.xml：
