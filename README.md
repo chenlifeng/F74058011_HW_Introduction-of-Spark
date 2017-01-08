@@ -34,16 +34,7 @@ Spark环境变量设置（修改.bashrc文件）:
    
    export PATH=$PATH:$SPARK_HOME/bin
  
-##Spark的架构
-
-[Spark architecture]()
-
-##Spark的Function
- 
- 
-关于Spark的Function的理解，我的参考资料主要是这篇博客：[Spark Function](https://www.iteblog.com/archives/1396)
-
-##Hadoop的安装配置
+ ##Hadoop的安装配置
 （因为我在使用使用Spark的过程中有套件提示需要用到Hadoop，所以说一下Hadoop的安装后的配置问题，下面是我的ubuntu系统的配置，这边的配置有求助助教帮忙配置，感谢！）
 
 1.core-site.xml：
@@ -136,8 +127,61 @@ Spark环境变量设置（修改.bashrc文件）:
 
               export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
               export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib"
-         
-         
+ 
+##Spark的模块架构
+
+Spark的详细设计理念看[这里](http://blog.csdn.net/beliefer/article/details/50561247)
+
+![Spark architecture](https://github.com/chenlifeng/F74058011_HW_Introduction-of-Spark/blob/master/feature/Spark%20architecture.png)
+
+Spark core:这里面提供了关于Spark最基础的功能，像我们的Driver Application的提交和执行就是这个模块进行工作,还有一些计算方面和其他的存储、部署等。
+
+Spark SQL:这个与数据库有关，可以结合数据库的知识进行处理。
+
+Spark streaming:提供关于流式计算方面的支持。
+
+Mlib:由图可以看到这是处理关于机器学习的（machine learning）方面。
+
+GraphX:这个模块主要支持一些关于图形的处理操作。
+
+##Spark程序模型
+
+我们可以从上面的架构上看到我们编写的Application是通过Spark core这个模块的功能进行提交和执行的,所以主要模型主要就是编写和提交执行两个部分。
+
+1.我们编写的程序是借助Spark core里面的SparkContext提供的API进行，因为SparkContext里面有提供一些通信、存储的功能。一些比较常见的API比如有textfile(使用方式：data =
+sc.textFile("TaipeiBurglary2015-01_10.csv"))
+
+2.program在Spark内部的具体执行处理流程[查看流程](http://m.blog.csdn.net/article/details?id=52422703)
+
+我们在编写Application的时候主要是使用Spark的计算模型RDD进行操作，Spark主要就是RDD的不断迭代计算过程。RDD包括到两个部分，一个是Tansformations，一个是Actions。
+
+–Transformations
+
+Create a new dataset from an existing one
+
+–Actions
+
+Return a value to the driver program after running a computation on the dataset
+
+ 
+关于SparkRDD的的Function的理解，可以参考这篇比较详细的博客：[Spark Function](https://www.iteblog.com/archives/1396) 
+ 
+##例子：[关于台北市窃盗Pattern的查找](https://github.com/chenlifeng/F74058011_HW_Introduction-of-Spark/tree/master/Spark)
+ 
+ 
+ 
+我想从下面这个题目分享一下我关于spark使用的过程和心得：(具体思路和程序解说参考Spark文件夹README)
+
+根据Dataset:[Taipei Burglary2015-01_10.csv](https://drive.google.com/open?id=0ByW2ffFcRkFgOVc1RHFEa0dLTUk)(台北市自行車、汽車、住宅竊盜點資訊)
+寻找台北市的窃盗PATTERN
+
+–給定一個距離R(公里)以及一個時間T(秒)   
+   
+–使用Spark來找出各種符合條件之竊盜類型序列及其個數  
+   
+–輸出結果內容為竊盜類型序列及其個數，並且根據個數多寡由多到少來進行排序 
+ 
+ 
 ##使用Spark可能会遇到的问题：
  ①IndentationError: unindent does not match any outer indentation level
  
@@ -168,20 +212,7 @@ Spark环境变量设置（修改.bashrc文件）:
   (以上为我遇到的比较大众化的问题，一些基础的语法问题可以根据在terminal的提示在对应的Line修改)
          
          
-##例子：[关于台北市窃盗Pattern的查找](https://github.com/chenlifeng/F74058011_HW_Introduction-of-Spark/tree/master/Spark)
- 
- 
- 
-我想从下面这个题目分享一下我关于spark使用的过程和心得：
 
-根据Dataset:[Taipei Burglary2015-01_10.csv](https://drive.google.com/open?id=0ByW2ffFcRkFgOVc1RHFEa0dLTUk)(台北市自行車、汽車、住宅竊盜點資訊)
-寻找台北市的窃盗PATTERN
-
-–給定一個距離R(公里)以及一個時間T(秒)   
-   
-–使用Spark來找出各種符合條件之竊盜類型序列及其個數  
-   
-–輸出結果內容為竊盜類型序列及其個數，並且根據個數多寡由多到少來進行排序
     
 
 
