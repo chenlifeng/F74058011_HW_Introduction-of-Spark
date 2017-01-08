@@ -24,6 +24,44 @@
   比如我的代码里面对应的路径就是把pyspark_csv.py和HW_F74058011_Spark.py一起放在spark-1.6.3文件夹下面
 
   注意：pyspark_csv这个repo的othercode文件夹下面可以下载或者需要自己去网上下载
+  
+ 
+ 
+##程序解说：
+ 
+ 1.Link Spark:
+ 
+     from pyspark import SparkContext, SparkConf
+ 
+ 2.Initialize Spark:
+ 
+     conf = SparkConf().setAppName("HW_F74058011_Spark").setMaster("local[*]")
+     sc = SparkContext(conf=conf)
+            
+ 3.External dataset:
+ 
+      data = sc.textFile("TaipeiBurglary2015-01_10.csv")
+      
+ 4.Start SparkContext:
+ 
+         from pyspark.sql import SQLContext
+         sqlContext=SQLContext(sc)
+         
+ 5.Create dataframe&dataframe operation:
+ 
+     df=pycsv.csvToDataFrame(sqlContext,data)
+     df=df.sort(df.Time.asc())
+     
+     df2 = sqlContext.createDataFrame(pattern)
+     all2 = df2.groupBy("strs").count().sort("count", ascending=False).collect()
+ 
+ 
+ 
+ 
+    
+ 
+ 
+  
 
 ##执行方式：
 
