@@ -165,7 +165,7 @@ Create a new dataset from an existing one
 Return a value to the driver program after running a computation on the dataset
 
  
-关于SparkRDD的的Function的理解，可以参考这篇比较详细的博客：[Spark Function](https://www.iteblog.com/archives/1396) 
+关于Spark的RDD的的Function的理解，可以参考这篇比较详细的博客：[Spark Function](https://www.iteblog.com/archives/1396) 
  
 ##例子：[关于台北市窃盗Pattern的查找](https://github.com/chenlifeng/F74058011_HW_Introduction-of-Spark/tree/master/Spark)
  
