@@ -1,8 +1,23 @@
 # Introduction of Spark
 
-环境：Linux的Ubuntu系统
+Spark是一个开源的并行计算框架，用于处理大数据，并且Spark还支持SQL查询，流式计算，图计算，机器学习等。支持Java、Python、Scala、R等语言。
+
+##How to use Spark
+
+1.Download and unzip it
+
+2.run spark
+
+将xxx.py放在spark文件夹下面
+
+启动Spark–./sbin/start-all.sh    
+
+编译执行代码–./bin/spark-submit xxx.py 
 
 ##Spark的安装配置
+
+环境：Linux的Ubuntu系统
+
 1.在安装Spark之前需要安装scala环境：
 
 scala环境变量设置（修改.bashrc文件）:
@@ -19,19 +34,14 @@ Spark环境变量设置（修改.bashrc文件）:
    
    export PATH=$PATH:$SPARK_HOME/bin
  
- 
+##Spark的架构
+
+[Spark architecture]()
+
 ##Spark的Function
  
  
 关于Spark的Function的理解，我的参考资料主要是这篇博客：[Spark Function](https://www.iteblog.com/archives/1396)
-
-##Spark的执行模式
-
-Spark的编译运行模式：
-
-①切换到spark-1.6.3文件夹下
-
-②执行bin/spark-submit xxx.py
 
 ##Hadoop的安装配置
 （因为我在使用使用Spark的过程中有套件提示需要用到Hadoop，所以说一下Hadoop的安装后的配置问题，下面是我的ubuntu系统的配置，这边的配置有求助助教帮忙配置，感谢！）
